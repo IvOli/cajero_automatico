@@ -1,0 +1,81 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  div#root-app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+  }
+  form#ingreso {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  form#ingreso > *{
+    margin-bottom: 2.5vh;
+  }
+  form#ingreso > label{
+    color: crimson;
+    font-size: 22px;
+  }
+  form#ingreso > input{
+    border-radius: 7px;
+    height: 44px;
+    border: solid 1px crimson;
+    outline: none;
+  }
+  form#ingreso > select{
+    border-radius: 7px;
+    height: 44px;
+    border: solid 1px crimson;
+    outline: none;
+  }
+  form#ingreso > #BtnIngreso{
+    height: 44px;
+    border: none;
+    background-color: crimson;
+    color: #FFF;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+div#opcionesUsuario > #BtnIngreso{
+    height: 60px;
+    border: none;
+    background-color: crimson;
+    color: #FFF;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: .2em;
+}
+#opcionesUsuario{
+    display: none;
+}
+#interaccion{
+  display: none;
+}
+div#interaccion > input{
+  border-radius: 7px;
+  height: 44px;
+  border: solid 1px crimson;
+  outline: none;
+}
+div#interaccion > p{
+  color: black;
+  font-size: 1.5em;
+}
+
+#monto{
+    margin: 20px 10px 20px 10px;
+}
+
+#saldo{
+   margin-left: 20px ;
+   font-weight: bold;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cajero.css" />
+    <title>Objetos</title>
+  </head>
+  <body>
+    <h1>Objetos y Prototipos - Cajero Banco chiquito</h1>
+    <div id="root-app" class="root-app">
+      <form id="ingreso">
+        <label for="usuario">Seleccione su usuario:</label>
+        <select id="usuario" name="usuario">
+          <option value="">Elija una opción</option>
+        </select>
+        <label for="password">Ingrese su contraseña:</label>
+        <input type="password" id="password" name="password" />
+        <p id="incorrecto"></p>
+        <input type="submit" id="BtnIngreso" value="Ingresar" onclick="Comparar(event)" />
+      </form>
+      <div id="opcionesUsuario" class="root-app">
+          <button id="BtnIngreso" onclick="movimientos(event,1)">Consultar Saldo</button>
+          <button id="BtnIngreso" onclick="movimientos(event,2)">Retirar</button>
+          <button id="BtnIngreso" onclick="movimientos(event,3)">Depositar</button>
+      </div>
+      <div class="root-app" id="interaccion">
+        <input type="text" id="monto">
+        <p id="saldo"></p>
+      </div>
+    </div>
+    <script src="cajero.js"></script>
+  </body>
+</html>
